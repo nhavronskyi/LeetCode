@@ -6,10 +6,10 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TwoSumTest {
-    TwoSum twoSum = new TwoSum();
     @Test
     public void tests(){
-
+        TwoSum twoSum = new TwoSum();
+        
         int[] test1 = {2,7,11,15};
         int[] test2 = {3,2,4};
         int[] test3 = {3,3};
