@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class SmallestEvenMultipleTest {
     @Test
-    public void test(){
+    public void test() {
         SmallestEvenMultiple smallestEvenMultiple = new SmallestEvenMultiple();
 
         Assertions.assertEquals(10, smallestEvenMultiple.solution(5));
