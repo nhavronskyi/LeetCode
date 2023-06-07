@@ -11,9 +11,11 @@ public class BinarySearchTest {
     @Test
     public void correct(){
         Assertions.assertEquals(4, binarySearch.search(test, 9));
+        Assertions.assertEquals(4, binarySearch.myBinarySearch(test, 9));
     }
     @Test
     public void wrong(){
-        Assertions.assertEquals(-1, binarySearch.search(test, 2));
+        Assertions.assertEquals(-1, binarySearch.myBinarySearch(test, 2));
+        Assertions.assertEquals(-1, binarySearch.myBinarySearch(test, 2));
     }
 }
