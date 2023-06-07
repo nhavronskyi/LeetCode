@@ -8,6 +8,7 @@ public class BinarySearchTest {
     private final BinarySearch binarySearch = new BinarySearch();
 
     private final int[] test = new int[]{-1,0,3,5,9,12};
+
     @Test
     public void correct(){
         Assertions.assertEquals(4, binarySearch.search(test, 9));

@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class BinarySearch {
-
     public int search(int[] nums, int target) {
         int binarySearch = Collections.binarySearch(Arrays.stream(nums).boxed().toList(), target);
         return binarySearch < 0 ? -1 : binarySearch;
