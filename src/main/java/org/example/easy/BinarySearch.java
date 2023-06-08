@@ -10,19 +10,18 @@ public class BinarySearch {
     }
 
     public int myBinarySearch(int[] nums, int target) {
-        return myBSearch(nums, target, 0,nums.length - 1);
+        return BinarySearchHelper(nums, target, 0, nums.length - 1);
     }
 
-    private int myBSearch(int[] nums, int target, int smallest, int biggest) {
-        if(smallest <= biggest){
-            int middle = smallest + (biggest - smallest)/2;
-            if(nums[middle] == target){
+    private int BinarySearchHelper(int[] nums, int target, int smallest, int biggest) {
+        if (smallest <= biggest) {
+            int middle = smallest + (biggest - smallest) / 2;
+            if (nums[middle] == target) {
                 return middle;
-            }else if(nums[middle] < target){
-                return myBSearch(nums,target,middle+1, biggest);
-            }
-            else{
-                return myBSearch(nums,target,smallest, middle-1);
+            } else if (nums[middle] < target) {
+                return BinarySearchHelper(nums, target, middle + 1, biggest);
+            } else {
+                return BinarySearchHelper(nums, target, smallest, middle - 1);
             }
         }
         return -1;
