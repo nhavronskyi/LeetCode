@@ -10,27 +10,27 @@ public class ValidParenthesesTest {
     private final ValidParentheses validParentheses = new ValidParentheses();
 
     @Test
-    public void correct(){
+    public void correct() {
         assertTrue(validParentheses.isValid("()"));
     }
 
     @Test
-    public void correct2(){
+    public void correct2() {
         assertTrue(validParentheses.isValid("()[]{}"));
     }
 
     @Test
-    public void wrong(){
+    public void wrong() {
         assertFalse(validParentheses.isValid("(]"));
     }
 
     @Test
-    public void wrong2(){
+    public void wrong2() {
         assertFalse(validParentheses.isValid("([)]"));
     }
 
     @Test
-    public void wrong3(){
+    public void wrong3() {
         assertFalse(validParentheses.isValid("["));
     }
 }

@@ -1,23 +1,16 @@
 package org.example.easy;
 
 public class ReverseLinkedList {
-    public static class ListNode {
-      public int val;
-      public ListNode next;
-      public ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
     private ListNode list;
 
     public ListNode reverseList(ListNode head) {
-        if(head == null){
+        if (head == null) {
             return null;
         }
         list = new ListNode(head.val);
         head = head.next;
 
-        while(head != null){
+        while (head != null) {
             add(head.val);
             head = head.next;
         }
@@ -31,5 +24,14 @@ public class ReverseLinkedList {
             newNode.next = list;
         }
         list = newNode;
+    }
+
+    public static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int val) {
+            this.val = val;
+        }
     }
 }
