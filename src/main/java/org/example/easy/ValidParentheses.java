@@ -10,7 +10,7 @@ public class ValidParentheses {
             switch (brace) {
                 case '(', '[', '{', '<' -> stack.push(brace);
                 case ')', ']', '}', '>' -> {
-                    if (stack.empty()){
+                    if (stack.empty()) {
                         return false;
                     }
                     char top = stack.pop();
