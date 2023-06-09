@@ -6,28 +6,28 @@ import org.junit.jupiter.api.Test;
 
 public class TopKFrequentElementsTest {
     private final TopKFrequentElements topKFrequentElements = new TopKFrequentElements();
-    private final int[] oneNumberMassive = {1};
-    private final int[] positiveNumbersMassive = {1, 1, 1, 2, 2, 3};
-    private final int[] negativeNumbersMassive = {-1, -1, -1, -2, -2, -3};
-    private final int[] mixedNumbersMassive = {-1, -1, 1, 2, 2, 3};
+    private final int[] oneNumberArray = {1};
+    private final int[] positiveNumbersArray = {1, 1, 1, 2, 2, 3};
+    private final int[] negativeNumbersArray = {-1, -1, -1, -2, -2, -3};
+    private final int[] mixedNumbersArray = {-1, -1, 1, 2, 2, 3};
 
     @Test
-    public void oneNumberMassive() {
-        Assertions.assertArrayEquals(new int[]{1}, topKFrequentElements.topKFrequent(oneNumberMassive, 1));
+    public void oneNumberArray() {
+        Assertions.assertArrayEquals(new int[]{1}, topKFrequentElements.topKFrequent(oneNumberArray, 1));
     }
 
     @Test
-    public void positiveNumbersMassive() {
-        Assertions.assertArrayEquals(new int[]{1, 2}, topKFrequentElements.topKFrequent(positiveNumbersMassive, 2));
+    public void positiveNumbersArray() {
+        Assertions.assertArrayEquals(new int[]{1, 2}, topKFrequentElements.topKFrequent(positiveNumbersArray, 2));
     }
 
     @Test
-    public void negativeNumbersMassive() {
-        Assertions.assertArrayEquals(new int[]{-1, -2}, topKFrequentElements.topKFrequent(negativeNumbersMassive, 2));
+    public void negativeNumbersArray() {
+        Assertions.assertArrayEquals(new int[]{-1, -2}, topKFrequentElements.topKFrequent(negativeNumbersArray, 2));
     }
 
     @Test
-    public void mixedNumbersMassive() {
-        Assertions.assertArrayEquals(new int[]{-1, 2}, topKFrequentElements.topKFrequent(mixedNumbersMassive, 2));
+    public void mixedNumbersArray() {
+        Assertions.assertArrayEquals(new int[]{-1, 2}, topKFrequentElements.topKFrequent(mixedNumbersArray, 2));
     }
 }
