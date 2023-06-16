@@ -1,5 +1,7 @@
 package org.example.medium;
 
+import java.util.EmptyStackException;
+
 public class MinStack {
     private Node head;
 
@@ -22,6 +24,9 @@ public class MinStack {
     }
 
     public int getMin() {
+        if(head == null){
+            throw new EmptyStackException();
+        }
         return getMinHelper(head.val, head);
     }
 

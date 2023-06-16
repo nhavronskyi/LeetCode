@@ -4,6 +4,8 @@ import org.example.medium.MinStack;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.EmptyStackException;
+
 public class MinStackTest {
     @Test
     public void test(){
@@ -18,5 +20,15 @@ public class MinStackTest {
 
         Assertions.assertEquals(0, minStack.top());
         Assertions.assertEquals(-2, minStack.getMin());
+    }
+
+    @Test
+    public void emptyStack(){
+        MinStack minStack = new MinStack();
+        try{
+            minStack.getMin();
+        }catch (Exception e) {
+            Assertions.assertEquals(EmptyStackException.class, e.getClass());
+        }
     }
 }
