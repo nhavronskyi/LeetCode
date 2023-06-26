@@ -8,7 +8,7 @@ import java.util.EmptyStackException;
 
 public class MinStackTest {
     @Test
-    public void test(){
+    public void test() {
         MinStack minStack = new MinStack();
         minStack.push(-2);
         minStack.push(0);
@@ -23,11 +23,11 @@ public class MinStackTest {
     }
 
     @Test
-    public void emptyStack(){
+    public void emptyStack() {
         MinStack minStack = new MinStack();
-        try{
+        try {
             minStack.getMin();
-        }catch (Exception e) {
+        } catch (Exception e) {
             Assertions.assertEquals(EmptyStackException.class, e.getClass());
         }
     }

@@ -24,7 +24,7 @@ public class MinStack {
     }
 
     public int getMin() {
-        if(head == null){
+        if (head == null) {
             throw new EmptyStackException();
         }
         return getMinHelper(head.val, head);
