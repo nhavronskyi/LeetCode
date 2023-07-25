@@ -1,6 +1,8 @@
 package org.example.easy;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class MergeStringsAlternately {
     public static String mergeAlternately(String word1, String word2) {
@@ -14,11 +16,11 @@ public class MergeStringsAlternately {
 
         Queue<String> st2 = new LinkedList<>(Arrays.asList(w2));
 
-        for (int i = 0; i < maxL; i++){
-            if(st1.iterator().hasNext()){
+        for (int i = 0; i < maxL; i++) {
+            if (st1.iterator().hasNext()) {
                 sb.append(st1.poll());
             }
-            if(st2.iterator().hasNext()){
+            if (st2.iterator().hasNext()) {
                 sb.append(st2.poll());
             }
         }
