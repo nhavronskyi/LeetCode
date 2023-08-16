@@ -5,15 +5,6 @@ import java.util.List;
 import java.util.Optional;
 
 public class RemoveDuplicatesFromSortedList {
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        private ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -50,5 +41,14 @@ public class RemoveDuplicatesFromSortedList {
                     return convertListNodeToArr(list, node.next);
                 })
                 .orElse(list);
+    }
+
+    public static class ListNode {
+        public int val;
+        public ListNode next;
+
+        private ListNode(int val) {
+            this.val = val;
+        }
     }
 }
