@@ -11,6 +11,7 @@ public class IsSubsequenceTest {
     public void trueTest() {
         assertTrue(isSubsequence("abc", "ahbgdc"));
     }
+
     @Test
     public void falseTest() {
         assertFalse(isSubsequence("axc", "ahbgdc"));

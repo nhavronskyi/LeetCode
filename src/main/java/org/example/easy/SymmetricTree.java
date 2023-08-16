@@ -5,16 +5,6 @@ import java.util.Objects;
 import java.util.Queue;
 
 public class SymmetricTree {
-    public static class TreeNode {
-        public Integer val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(Integer val) {
-            this.val = val;
-        }
-    }
-
     public static void insert(TreeNode root, Integer value) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
@@ -61,5 +51,15 @@ public class SymmetricTree {
         }
 
         return isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left);
+    }
+
+    public static class TreeNode {
+        public Integer val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(Integer val) {
+            this.val = val;
+        }
     }
 }

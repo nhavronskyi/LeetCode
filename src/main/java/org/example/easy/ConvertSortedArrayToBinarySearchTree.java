@@ -4,16 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConvertSortedArrayToBinarySearchTree {
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static int[] getBSTAsArray(TreeNode root) {
         var list = new ArrayList<Integer>();
         preorderTraversal(root, list);
@@ -41,5 +31,15 @@ public class ConvertSortedArrayToBinarySearchTree {
         root.left = buildBST(nums, start, mid - 1);
         root.right = buildBST(nums, mid + 1, end);
         return root;
+    }
+
+    public static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
     }
 }

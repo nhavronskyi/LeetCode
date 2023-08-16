@@ -2,23 +2,24 @@ package easy;
 
 import org.junit.Test;
 
-import static org.example.easy.ReverseVowelsOfAString.*;
-import static org.junit.Assert.*;
+import static org.example.easy.ReverseVowelsOfAString.reverseVowels;
+import static org.junit.Assert.assertEquals;
 
 public class ReverseVowelsOfAStringTest {
     @Test
-    public void lowerCaseTest(){
+    public void lowerCaseTest() {
         assertEquals("holle", reverseVowels("hello"));
         assertEquals("leotcede", reverseVowels("leetcode"));
     }
+
     @Test
-    public void upperCaseTest(){
+    public void upperCaseTest() {
         assertEquals("HOLLE", reverseVowels("HELLO"));
         assertEquals("LEOTCEDE", reverseVowels("LEETCODE"));
     }
 
     @Test
-    public void mixedCaseTest(){
+    public void mixedCaseTest() {
         assertEquals("hollE", reverseVowels("hEllo"));
         assertEquals("lEotcEde", reverseVowels("leEtcodE"));
     }

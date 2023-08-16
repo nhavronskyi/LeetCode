@@ -14,7 +14,7 @@ public class BalancedBinaryTreeTest {
     }
 
     private void correct(Integer[] act) {
-        Assert.assertTrue(isBalanced(convertArrToTreeNode(act, 0)));
+        Assert.assertTrue(isBalanced(convertArrToTreeNode(act)));
     }
 
     @Test
@@ -23,6 +23,6 @@ public class BalancedBinaryTreeTest {
     }
 
     private void wrong(Integer[] act) {
-        Assert.assertFalse(isBalanced(convertArrToTreeNode(act, 0)));
+        Assert.assertFalse(isBalanced(convertArrToTreeNode(act)));
     }
 }
