@@ -1,20 +1,15 @@
 package org.example.easyPartTwo;
 
+import java.util.Arrays;
+
 public class SingleNumber {
     public static int singleNumber(int[] nums) {
-        for (int j : nums) {
-            int counter = 0;
-            for (int num : nums) {
-                if (j == num) {
-                    ++counter;
-                }
-            }
-            if (counter == 1) {
-                return j;
-            }
-        }
-
-        throw new ArithmeticException();
+        return Arrays.stream(nums)
+                .filter(i -> Arrays.stream(nums)
+                        .filter(num -> num == i)
+                        .count() == 1L)
+                .findFirst()
+                .orElseThrow(ArithmeticException::new);
     }
 //    public static int singleNumber(int[] nums) {
 //        return Arrays.stream(nums)
