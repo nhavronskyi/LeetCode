@@ -11,15 +11,4 @@ public class SingleNumber {
                 .findFirst()
                 .orElseThrow(ArithmeticException::new);
     }
-//    public static int singleNumber(int[] nums) {
-//        return Arrays.stream(nums)
-//                .boxed()
-//                .collect(Collectors.groupingBy(x -> x, Collectors.counting()))
-//                .entrySet()
-//                .stream()
-//                .filter(x -> x.getValue() == 1)
-//                .map(Map.Entry::getKey)
-//                .findFirst()
-//                .orElseThrow(ArithmeticException::new);
-//    }
 }
