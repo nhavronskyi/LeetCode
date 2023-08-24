@@ -1,4 +1,4 @@
-package org.example.helpers;
+package org.example.helpers.tree;
 
 public class TreeNode {
     public int val;
