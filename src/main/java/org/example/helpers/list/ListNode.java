@@ -1,4 +1,4 @@
-package org.example.helpers;
+package org.example.helpers.list;
 
 public class ListNode {
     public int val;
