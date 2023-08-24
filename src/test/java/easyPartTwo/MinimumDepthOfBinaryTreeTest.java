@@ -3,8 +3,8 @@ package easyPartTwo;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.example.easyPartTwo.MinimumDepthOfBinaryTree.convertArrToTreeNode;
 import static org.example.easyPartTwo.MinimumDepthOfBinaryTree.minDepth;
+import static org.example.helpers.tree.Tree.*;
 
 public class MinimumDepthOfBinaryTreeTest {
 
