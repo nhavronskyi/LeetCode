@@ -1,6 +1,6 @@
 package org.example.easyPartTwo;
 
-import org.example.helpers.TreeNode;
+import org.example.helpers.tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,16 +20,5 @@ public class BinaryTreePreorderTraversal {
                     preorderTraversal(node.left, list);
                     preorderTraversal(node.right, list);
                 });
-    }
-
-    public static TreeNode convertArrToTreeNode(Integer[] values) {
-        return convert(values, 0);
-    }
-
-    private static TreeNode convert(Integer[] values, int index) {
-        if (index >= values.length || values[index] == null) {
-            return null;
-        }
-        return new TreeNode(values[index], convert(values, index + 1), convert(values, index + 2));
     }
 }

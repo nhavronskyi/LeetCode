@@ -4,8 +4,8 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.example.easyPartTwo.BinaryTreePreorderTraversal.convertArrToTreeNode;
 import static org.example.easyPartTwo.BinaryTreePreorderTraversal.preorderTraversal;
+import static org.example.helpers.tree.Tree.*;
 import static org.junit.Assert.assertEquals;
 
 public class BinaryTreePreorderTraversalTest {

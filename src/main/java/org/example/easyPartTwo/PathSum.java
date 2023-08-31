@@ -1,6 +1,6 @@
 package org.example.easyPartTwo;
 
-import org.example.helpers.TreeNode;
+import org.example.helpers.tree.TreeNode;
 
 public class PathSum {
     public static boolean hasPathSum(TreeNode root, int targetSum) {
