@@ -9,7 +9,7 @@ public class ReverseBits {
         return ans;
     }
 
-    public static int parseBinaryToLong(String binary) {
+    public static int parseBinaryToInt(String binary) {
         return (int) Long.parseLong(binary, 2);
     }
 

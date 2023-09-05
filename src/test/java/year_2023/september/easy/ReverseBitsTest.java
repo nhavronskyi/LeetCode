@@ -13,6 +13,6 @@ public class ReverseBitsTest {
     }
 
     private void test(long ans, String act){
-        Assert.assertEquals(ans, convertReversedBitsToLong(reverseBits(parseBinaryToLong(act))));
+        Assert.assertEquals(ans, convertReversedBitsToLong(reverseBits(parseBinaryToInt(act))));
     }
 }
