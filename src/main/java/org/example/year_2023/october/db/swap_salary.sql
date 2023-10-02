@@ -1,1 +1,2 @@
-UPDATE salary SET sex=IF(sex='m','f','m');
+UPDATE salary
+SET sex=IF(sex = 'm', 'f', 'm');
