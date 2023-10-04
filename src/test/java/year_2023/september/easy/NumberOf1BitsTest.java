@@ -3,7 +3,8 @@ package year_2023.september.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.example.year_2023.september.easy.NumberOf1Bits.*;
+import static org.example.year_2023.september.easy.NumberOf1Bits.convertBinaryToInt;
+import static org.example.year_2023.september.easy.NumberOf1Bits.hammingWeight;
 
 public class NumberOf1BitsTest {
     @Test

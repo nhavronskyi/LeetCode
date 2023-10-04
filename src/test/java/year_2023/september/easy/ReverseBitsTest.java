@@ -12,7 +12,7 @@ public class ReverseBitsTest {
         test(3_221_225_471L, "11111111111111111111111111111101");
     }
 
-    private void test(long ans, String act){
+    private void test(long ans, String act) {
         Assert.assertEquals(ans, convertReversedBitsToLong(reverseBits(parseBinaryToInt(act))));
     }
 }
