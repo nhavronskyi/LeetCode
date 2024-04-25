@@ -1,6 +1,6 @@
 import unittest
 
-from src.easy.can_make_arithmetic_progression_from_sequence import can_make_arithmetic_progression
+from src.solution.easy.can_make_arithmetic_progression_from_sequence import can_make_arithmetic_progression
 
 
 class Test(unittest.TestCase):
