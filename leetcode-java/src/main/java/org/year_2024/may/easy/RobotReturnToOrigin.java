@@ -6,6 +6,7 @@ public class RobotReturnToOrigin {
         moves.chars()
                 .forEach(c -> opposite(arr, (char) c));
 
+
         return arr[0] == 0 && arr[1] == 0;
     }
 
