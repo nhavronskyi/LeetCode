@@ -1,6 +1,5 @@
 def count_odds(low: int, high: int) -> int:
-    counter = 0
-    for num in range(low, high + 1):
-        if num % 2 == 1:
-            counter += 1
-    return counter
+    res = (high - low) / 2
+    if low % 2 == 1 or high % 2 == 1:
+        res += 1
+    return int(res)
