@@ -1,6 +1,6 @@
 import pytest
 
-from src.solution.easy.to_lower_case import to_lower_case
+from src.solution.easy.april.to_lower_case import to_lower_case
 
 
 @pytest.mark.parametrize(

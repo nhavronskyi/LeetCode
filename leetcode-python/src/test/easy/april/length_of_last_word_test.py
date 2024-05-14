@@ -1,6 +1,6 @@
 import pytest
 
-from src.solution.easy.length_of_last_word import length_of_last_word
+from src.solution.easy.april.length_of_last_word import length_of_last_word
 
 
 @pytest.mark.parametrize("exp, word", [

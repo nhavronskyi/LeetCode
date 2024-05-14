@@ -2,7 +2,7 @@ from typing import List
 
 import pytest
 
-from src.solution.easy.monotonic_array import is_monotonic
+from src.solution.easy.april.monotonic_array import is_monotonic
 
 
 @pytest.mark.parametrize("nums", [

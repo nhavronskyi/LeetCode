@@ -1,6 +1,6 @@
 import pytest
 
-from src.solution.easy.roman_to_integer import roman_to_int
+from src.solution.easy.april.roman_to_integer import roman_to_int
 
 
 @pytest.mark.parametrize("value, expected", [
