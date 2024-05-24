@@ -18,15 +18,15 @@ class LemonadeChangeTest {
         );
     }
 
+    public static Stream<Arguments> argsFalse() {
+        return Stream.of(arguments(new int[]{5, 5, 10, 10, 20}));
+    }
+
     @ParameterizedTest
     @MethodSource("argsTrue")
     void testIfSellerCanProvideChange(int[] input) {
         boolean actual = LemonadeChange.lemonadeChange(input);
         Assertions.assertTrue(actual);
-    }
-
-    public static Stream<Arguments> argsFalse() {
-        return Stream.of(arguments(new int[]{5, 5, 10, 10, 20}));
     }
 
     @ParameterizedTest

@@ -19,7 +19,6 @@ public class MultiplyStrings {
                 int mul = a * b;
 
                 int sum = mul + result[i + j + 1];
-                System.out.println(sum);
 
                 result[i + j + 1] = sum % 10;
                 result[i + j] += sum / 10;

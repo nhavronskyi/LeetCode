@@ -54,6 +54,13 @@ class MatrixZeroesTest {
         );
     }
 
+    private static String getArray(int[][] arr, int ind) {
+        return Arrays.stream(arr[ind])
+                .boxed()
+                .toList()
+                .toString();
+    }
+
     @ParameterizedTest
     @MethodSource("args")
     void testZeroes(int[][] expected, int[][] matrix) {
@@ -63,13 +70,6 @@ class MatrixZeroesTest {
             String matArray = getArray(matrix, i);
             assertArrayEquals(expected[i], matrix[i], "row " + i + " " + expArray + " == " + matArray);
         }
-    }
-
-    private static String getArray(int[][] arr, int ind) {
-        return Arrays.stream(arr[ind])
-                .boxed()
-                .toList()
-                .toString();
     }
 
 }

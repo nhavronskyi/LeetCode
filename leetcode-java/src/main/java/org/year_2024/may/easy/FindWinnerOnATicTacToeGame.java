@@ -24,7 +24,7 @@ public class FindWinnerOnATicTacToeGame {
 
     private static boolean isAWinner(int[][] grid, int x, int y, int z, int player) {
         return winOptionHorizontal(grid, x, y, z, player) ||
-                winOptionVertical(grid, x, y, z, player);
+               winOptionVertical(grid, x, y, z, player);
     }
 
     private static boolean winOptionVertical(int[][] grid, int x, int y, int z, int player) {
